@@ -1,0 +1,314 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Apr 18 18:49:25 2022
+# Process ID: 13468
+# Current directory: /home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/vivado.jou
+# Running On: chris-IdeaPad-5-Pro-14ACN6, OS: Linux, CPU Frequency: 1600.000 MHz, CPU Physical cores: 12, Host memory: 14507 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/chris/Vivado/2021.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13493
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2747.152 ; gain = 0.000 ; free physical = 4520 ; free virtual = 7982
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_c_counter_binary_0_0' [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/.Xil/Vivado-13468-chris-IdeaPad-5-Pro-14ACN6/realtime/design_1_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_c_counter_binary_0_0' (1#1) [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/.Xil/Vivado-13468-chris-IdeaPad-5-Pro-14ACN6/realtime/design_1_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0' [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/.Xil/Vivado-13468-chris-IdeaPad-5-Pro-14ACN6/realtime/design_1_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0' (2#1) [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/.Xil/Vivado-13468-chris-IdeaPad-5-Pro-14ACN6/realtime/design_1_clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'locked' of module 'design_1_clk_wiz_0' is unconnected for instance 'clk_wiz' [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/synth/design_1.v:35]
+WARNING: [Synth 8-7023] instance 'clk_wiz' of module 'design_1_clk_wiz_0' has 4 connections declared, but only 3 given [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/synth/design_1.v:35]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/synth/design_1.v:39]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/.Xil/Vivado-13468-chris-IdeaPad-5-Pro-14ACN6/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (3#1) [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/.Xil/Vivado-13468-chris-IdeaPad-5-Pro-14ACN6/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_0_0' [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/.Xil/Vivado-13468-chris-IdeaPad-5-Pro-14ACN6/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_0_0' (4#1) [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/.Xil/Vivado-13468-chris-IdeaPad-5-Pro-14ACN6/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (5#1) [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (6#1) [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/synth/design_1.v:42]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'c_counter_binary_0'. This will prevent further optimization [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/synth/design_1.v:31]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_0'. This will prevent further optimization [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/synth/design_1.v:46]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/synth/design_1.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (7#1) [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (8#1) [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-7129] Port Din[31] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[30] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[29] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[28] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[27] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[22] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[21] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2747.152 ; gain = 0.000 ; free physical = 3593 ; free virtual = 7056
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2747.152 ; gain = 0.000 ; free physical = 3585 ; free virtual = 7049
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2747.152 ; gain = 0.000 ; free physical = 3585 ; free virtual = 7049
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2747.152 ; gain = 0.000 ; free physical = 3579 ; free virtual = 7042
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/c_counter_binary_0'
+Finished Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/c_counter_binary_0'
+Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
+Finished Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
+Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc] for cell 'design_1_i/clk_wiz'
+Finished Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc] for cell 'design_1_i/clk_wiz'
+Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.srcs/constrs_1/new/lab9_const.xdc]
+Finished Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.srcs/constrs_1/new/lab9_const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.srcs/constrs_1/new/lab9_const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2811.102 ; gain = 0.000 ; free physical = 4423 ; free virtual = 7888
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2811.102 ; gain = 0.000 ; free physical = 4423 ; free virtual = 7888
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4495 ; free virtual = 7960
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4495 ; free virtual = 7960
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/c_counter_binary_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/vio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4498 ; free virtual = 7963
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4497 ; free virtual = 7963
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Din[31] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[30] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[29] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[28] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[27] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[22] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[21] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[20] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[19] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[18] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[17] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[16] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[15] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[14] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[13] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[12] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[11] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[10] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[9] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[8] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module design_1_xlslice_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4483 ; free virtual = 7953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4361 ; free virtual = 7830
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4361 ; free virtual = 7830
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4359 ; free virtual = 7829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4359 ; free virtual = 7829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4359 ; free virtual = 7829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4359 ; free virtual = 7829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4359 ; free virtual = 7829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4359 ; free virtual = 7829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4359 ; free virtual = 7829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |design_1_c_counter_binary_0_0 |         1|
+|2     |design_1_clk_wiz_0            |         1|
+|3     |design_1_ila_0_0              |         1|
+|4     |design_1_vio_0_0              |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |design_1_c_counter_binary_0 |     1|
+|2     |design_1_clk_wiz            |     1|
+|3     |design_1_ila_0              |     1|
+|4     |design_1_vio_0              |     1|
+|5     |IBUF                        |     1|
+|6     |OBUF                        |     4|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4359 ; free virtual = 7829
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2811.102 ; gain = 0.000 ; free physical = 4416 ; free virtual = 7886
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2811.102 ; gain = 63.949 ; free physical = 4416 ; free virtual = 7886
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2811.102 ; gain = 0.000 ; free physical = 4503 ; free virtual = 7973
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2811.102 ; gain = 0.000 ; free physical = 4439 ; free virtual = 7909
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 728ea2e9
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 2811.102 ; gain = 64.031 ; free physical = 4631 ; free virtual = 8101
+INFO: [Common 17-1381] The checkpoint '/home/chris/sp22-e520-lab-assignment9-hw-ychen0223/hardware/ila_vio_lab.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 18 18:49:55 2022...
